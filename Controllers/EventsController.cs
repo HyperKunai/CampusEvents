@@ -13,12 +13,11 @@ public class EventsController : Controller
     }
 
     public IActionResult Index()
-{
-    _logger.LogInformation("Handling request for the CEMS Events page.");
+    {
+        _logger.LogInformation("Handling request for the CEMS Events page.");
 
-    var featuredEventTitle = "Campus Welcome Mixer";
+        var featuredEventTitle = "Library Research Night";
 
-    return View(model: featuredEventTitle);
-}
-
+        return View(model: featuredEventTitle);
+    }
 }
